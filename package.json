@@ -1,0 +1,26 @@
+{
+    "name": "web3-providers-fetch",
+    "version": "1.7.3",
+    "description": "Fork of web3-providers-http with WHATWG Fetch API support.",
+    "repository": "https://github.com/ayanamitech/web3-providers-fetch",
+    "license": "LGPL-3.0",
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "scripts": {
+        "compile": "tsc -b tsconfig.json",
+        "dtslint": "dtslint --localTs ./node_modules/typescript/lib types"
+    },
+    "types": "types/index.d.ts",
+    "main": "lib/index.js",
+    "dependencies": {
+        "abortcontroller-polyfill": "^1.7.3",
+        "cross-fetch": "^3.1.4",
+        "es6-promise": "^4.2.8",
+        "web3-core-helpers": "1.7.3"
+    },
+    "devDependencies": {
+        "dtslint": "^3.4.1",
+        "typescript": "^3.9.5"
+    }
+}
